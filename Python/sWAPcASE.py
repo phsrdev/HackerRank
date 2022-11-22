@@ -1,10 +1,10 @@
 def swap_case(s):
     res = ''
     for c in s:
-        #Usando ASCII para identificar a letra maiuscula, verificando se a letra esta entre A e Z maiusculo
+        #verificando se a letra esta entre A e Z maiusculo
         if ord('A') <= ord(c) <= ord('Z'):
             res += chr(ord(c) | (1 << 5))
-        #Usando ASCII para identificar a letra minuscula, verificando se a letra esta entre a e z minusculo    
+        #verificando se a letra esta entre a e z minusculo    
         elif ord('a') <= ord(c) <= ord('z'):
             res += chr(ord(c) & ~(1 << 5))      
         else:
@@ -14,7 +14,7 @@ if __name__ == '__main__':
     s = input()
     result = swap_case(s)
     print(result)
-    
+
 '''
 You are given a string and your task is to swap cases. In other words, convert all lowercase letters to uppercase letters and vice versa.
 
