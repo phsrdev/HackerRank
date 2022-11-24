@@ -10,3 +10,7 @@ Repositorio onde compartilho meus exercicios realizados no site HackerRank.com
 <a href="https://www.hackerrank.com/certificates/1eb863df023b">
   <img src="https://github.com/phsrdev/HackerRank/blob/main/Badges_Certificates/ProblemSolving(Basic)Verified.png" alt="Java Basic Certificate" height="245" width="186">
 </a>
+<a href="https://www.hackerrank.com/certificates/cc7bcdb6a108">
+  <img src="https://github.com/phsrdev/HackerRank/blob/main/Badges_Certificates/Python(Basic)Verified.png" alt="Python Basic Certificate" height="245" width="186">
+</a>
+
