@@ -1,3 +1,19 @@
+N, M = input().split()
+
+filler = '-'
+pattern = '.|.'
+
+# top
+for i in range(1, int(N) - 1, 2):
+    print((pattern*i).center(int(M), filler))
+
+# center
+print('WELCOME'.center(int(M), filler))
+
+# bottom
+for i in range(int(N) - 2, 0, -2):
+    print((pattern*i).center(int(M), filler))
+
 '''
 Mr. Vincent works in a door mat manufacturing company. One day, he designed a new door mat with the following specifications:
 
