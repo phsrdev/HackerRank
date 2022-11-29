@@ -1,3 +1,26 @@
+def minion_game(string):
+    # your code goes here
+    alphabet_vowels = ['A', 'E', 'I', 'O', 'U']
+    str_len = len(string)
+
+    scorecard_kevin = [1 if string[i] in alphabet_vowels        else 0 for i in iter(range(str_len)) ]
+
+    score_total = sum([*range(1,str_len+1)])
+    score_kevin = sum([a*b for a,b in zip(scorecard_kevin,      [*range(1,str_len+1)][::-1])])
+
+    score_stuart = score_total-score_kevin    
+
+    if score_stuart>score_kevin:
+        print("Stuart %d"%score_stuart)
+    elif score_stuart<score_kevin:    
+        print("Kevin %d"%score_kevin)
+    else:
+        print("Draw")
+            
+if __name__ == '__main__':
+    s = input()
+    minion_game(s)
+
 '''
 Kevin and Stuart want to play the 'The Minion Game'.
 
