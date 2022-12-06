@@ -1,5 +1,6 @@
 '''
-(https://docs.python.org/2/library/itertools.html#itertools.permutations)
+itertools.permutations(iterable[, r]) (https://docs.python.org/2/library/itertools.html#itertools.permutations)
+
 This tool returns successive r length permutations of elements in an iterable.
 
 If r is not specified or is None, then r defaults to the length of the iterable, and all possible full length permutations are generated.
@@ -20,6 +21,7 @@ Sample Code
 >>>
 >>> print list(permutations('abc',3))
 [('a', 'b', 'c'), ('a', 'c', 'b'), ('b', 'a', 'c'), ('b', 'c', 'a'), ('c', 'a', 'b'), ('c', 'b', 'a')]
+
 Task
 
 You are given a string S.
@@ -56,6 +58,7 @@ HK
 KA
 KC
 KH
+
 Explanation
 
 All possible size 2 permutations of the string "HACK" are printed in lexicographic sorted order.
